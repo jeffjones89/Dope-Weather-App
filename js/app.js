@@ -6,5 +6,7 @@ App = {
 }
 
 $(document).ready(function(){
-  console.log('test');
+  $('.submit').on('click', function(){
+    
+  })
 });

@@ -1,5 +1,8 @@
 App.Views.MapView = Backbone.View.extend({
   template: _.template($('#map-template').html()),
+  events{
+    'click el': "collectionSetUp"
+  }
   render: function () {
     this.$el.html(this.template());
 
@@ -12,7 +15,7 @@ App.Views.MapView = Backbone.View.extend({
         accessToken: 'pk.eyJ1Ijoiam1hczEzIiwiYSI6ImNlZDBjZTRkYzk0YzU2MDIwYmExN2EwOTYwZWQyY2Y3In0.OQWLOHZem1gvhuhG7QhEsw'
         }).addTo(map);
     return this;
-  }
+  },
 });
 
 var mapView = new MapView();
