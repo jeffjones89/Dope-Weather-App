@@ -14,11 +14,19 @@
 </head>
 <body>
   <div id='container'></div>
+  <div id="forecast"></div>
   <script type='template' id='map-template'>
     <div id="map"></div>
   </script>
   <script src="js/views/map.js"></script>
 </body>
 
+<script id="forecastTemplate" type="text/x-handlebars-template">
+  <h2>{{date.weekday}} {{monthname}} {{day}}</h2>
+  <img src="{{icon_url}}" alt="weather icon">
+  <span>{{conditions}}</span>
+  <span>{{high.fahrenheit}} F</span>
+  <span>{{low.fahrenheit}} F</span>
+</script>
 
 </html>
