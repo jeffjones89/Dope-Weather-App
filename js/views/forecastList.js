@@ -1,11 +1,12 @@
 App.Views.ForecastList = Backbone.View.extend({
-  el: '#forecast',
+  el: '#forecasts',
   views: [],
   initialize: function(){
     this.listenTo(this.collection, 'reset', this.renderAll);
     this.listenTo(this.collection, 'add', this.renderOne)
   },
   renderAll: function(){
+    console.log('running');
     this.$el.empty();
     this.collection.each(this.renderOne.bind(this));
   },
