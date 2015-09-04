@@ -18,5 +18,5 @@ App.Views.MapView = Backbone.View.extend({
   },
 });
 
-var mapView = new MapView();
+var mapView = new App.Views.MapView();
 $('#container').html(mapView.render().el);
