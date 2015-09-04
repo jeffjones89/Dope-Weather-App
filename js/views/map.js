@@ -1,3 +1,4 @@
+
 // App.Views.MapView = Backbone.View.extend({
 //   template: _.template($('#map-template').html()),
 //   render: function () {
